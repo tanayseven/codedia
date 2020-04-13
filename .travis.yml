@@ -5,8 +5,14 @@ before_install:
 - pip install poetry
 install:
 - poetry install
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 script:
-  - poetry run pytest
+  - poetry run coverage run -m pytest
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 #before_deploy:
 #  - poetry config repositories.mypypi http://mypypi.example.com/simple
 #  - poetry config  $MYPYPI_USER $MYPYPI_PASS

@@ -4,6 +4,22 @@ CodeDia
 A simple Python based DSL to draw diagrams in a declarative way using code
 --------------------------------------------------------------------------
 
+.. image:: https://travis-ci.org/tanayseven/codedia.svg?branch=master
+    :target: https://travis-ci.org/tanayseven/codedia
+    :alt: Travis CI
+
+.. image:: https://api.codeclimate.com/v1/badges/4e84069219b847bf77c7/maintainability
+   :target: https://codeclimate.com/github/tanayseven/codedia/maintainability
+   :alt: Maintainability
+
+.. image:: https://api.codeclimate.com/v1/badges/4e84069219b847bf77c7/test_coverage
+   :target: https://codeclimate.com/github/tanayseven/codedia/test_coverage
+   :alt: Test Coverage
+
+.. image:: https://img.shields.io/github/license/tanayseven/http_quest.svg?cacheSeconds=86400
+    :target: https://github.com/tanayseven/http_quest/blob/master/LICENSE.txt
+    :alt: License
+
 Who should use CodeDia?
 -----------------------
 
