@@ -47,7 +47,7 @@ Who should NOT use CodeDia?
 1. You want to drag-drop and draw the diagrams with your mouse
 2. You want the diagram to be fully customizable with colouring and formatting
 3. You are a Photoshop expert or a graphics designer and can make diagrams look really beautiful
-4. YOu have other tools which make it easier for you to draw diagrams
+4. You have other tools which make it easier for you to draw diagrams
 
 How to use CodeDia
 ------------------
