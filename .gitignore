@@ -4,3 +4,4 @@
 codedia.egg-info/
 *__pycache__/
 .coverage
+dist/

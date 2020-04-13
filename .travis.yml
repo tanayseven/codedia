@@ -1,6 +1,10 @@
 language: python
 python:
   - "3.8"
+env:
+  global:
+    DEPLOY=false
+    VERSION_TYPE=patch
 before_install:
 - pip install poetry
 install:
@@ -11,11 +15,12 @@ before_script:
   - ./cc-test-reporter before-build
 script:
   - poetry run coverage run -m pytest
+  - |
+    if [ $TRAVIS_BRANCH == "master" && $TRAVIS_PULL_REQUEST == "false" ]; then
+      poetry version $VERSION_TYPE
+      poetry build
+      poetry publish
+      sh .travis-push.sh
+    fi
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-#before_deploy:
-#  - poetry config repositories.mypypi http://mypypi.example.com/simple
-#  - poetry config  $MYPYPI_USER $MYPYPI_PASS
-#  - poetry build -f sdist
-#deploy:
-#  - poetry publish -r mypypi

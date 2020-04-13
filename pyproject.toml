@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "CodeDia"
+name = "codedia"
 version = "0.1.0"
 description = "A simple declarative DSL based in Python for drawing diagrams"
 authors = ["Tanay PrabhuDesai <tanayseven@gmail.com>"]

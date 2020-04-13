@@ -9,12 +9,24 @@ A simple Python based DSL to draw diagrams in a declarative way using code
     :alt: Travis CI
 
 .. image:: https://api.codeclimate.com/v1/badges/4e84069219b847bf77c7/maintainability
-   :target: https://codeclimate.com/github/tanayseven/codedia/maintainability
-   :alt: Maintainability
+    :target: https://codeclimate.com/github/tanayseven/codedia/maintainability
+    :alt: Maintainability
 
 .. image:: https://api.codeclimate.com/v1/badges/4e84069219b847bf77c7/test_coverage
-   :target: https://codeclimate.com/github/tanayseven/codedia/test_coverage
-   :alt: Test Coverage
+    :target: https://codeclimate.com/github/tanayseven/codedia/test_coverage
+    :alt: Test Coverage
+
+.. image:: https://img.shields.io/pypi/implementation/codedia
+    :target: https://pypi.org/project/codedia/
+    :alt: PyPI - Implementation
+
+.. image:: https://img.shields.io/pypi/wheel/codedia
+    :target: https://pypi.org/project/codedia/
+    :alt: PyPI - Wheel
+
+.. image:: https://img.shields.io/pypi/pyversions/codedia
+    :target: https://pypi.org/project/codedia/
+    :alt: PyPI - Python Version
 
 .. image:: https://img.shields.io/github/license/tanayseven/http_quest.svg?cacheSeconds=86400
     :target: https://github.com/tanayseven/http_quest/blob/master/LICENSE.txt
