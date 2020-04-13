@@ -15,12 +15,14 @@ before_script:
   - ./cc-test-reporter before-build
 script:
   - poetry run coverage run -m pytest
-  - |
-    if [ $TRAVIS_BRANCH == "master" && $TRAVIS_PULL_REQUEST == "false" ]; then
-      poetry version $VERSION_TYPE
-      poetry build
-      poetry publish
-      sh .travis-push.sh
-    fi
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+before_deploy:
+- poetry config http-basic.pypi $PYPI_USERNAME $PYPI_PASSWORD
+- poetry build
+deploy:
+  provider: script
+  script: poetry publish
+  on:
+    tags: true
+    branch: master
