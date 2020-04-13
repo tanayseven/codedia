@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "codedia"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple declarative DSL based in Python for drawing diagrams"
 authors = ["Tanay PrabhuDesai <tanayseven@gmail.com>"]
 license = "MIT"
