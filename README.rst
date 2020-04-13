@@ -56,6 +56,20 @@ How to use CodeDia
 
     codedia example_flowchart.py
 
+Deploying
+---------
+
+Run the following set of commands to make the CI to deploy the latest build to PyPI
+
+.. code-block:: shell
+
+    poetry version {patch|minor|major}
+    git add .
+    git commit -m "Updated to version <version_number>"
+    git tag v<version_number>
+    git push --tags
+
+
 License
 -------
 
