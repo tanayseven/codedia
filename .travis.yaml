@@ -1,0 +1,15 @@
+language: python
+python:
+  - "3.8"
+before_install:
+- pip install poetry
+install:
+- poetry install
+script:
+  - poetry run pytest
+#before_deploy:
+#  - poetry config repositories.mypypi http://mypypi.example.com/simple
+#  - poetry config  $MYPYPI_USER $MYPYPI_PASS
+#  - poetry build -f sdist
+#deploy:
+#  - poetry publish -r mypypi
